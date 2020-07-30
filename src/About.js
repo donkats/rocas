@@ -12,6 +12,6 @@ const GridWrapper = styled.div`
 export const About = () => (
   <GridWrapper>
     <h2>About Page</h2>
-    <p>Over ons.</p>
+    <p>Over ons</p>
   </GridWrapper>
 )
