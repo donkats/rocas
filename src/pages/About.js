@@ -4,8 +4,8 @@ import React from 'react';
 const About = props => {
   return (
     <div>
-      <h3>About View</h3>
-      <p> This is the about view of SPA</p>
+      <h3>Over ons</h3>
+      <p>Tekst over ons</p>
     </div>
   );
 };
