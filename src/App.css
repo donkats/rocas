@@ -1,11 +1,35 @@
 .topbar{
-  background-color: blue;
+  box-sizing: border-box;
+  position: fixed;
+  height: 15vh;
+  width: 100%;
+  background-color:#f4f4f4;
+  color: #000000;
   padding: 0;
 }
 
+.topbar a {
+  color:black;
+}
+
+.topbar a:visited{
+  color: black;
+}
+
+.topbar a:hover{
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+
+.selected {
+  background-color: blanchedalmond;
+}
+
 .title{
-  color: whitesmoke;
+  color: red;
   text-align: center;
+  font-family: 'Satisfy', cursive;
   padding: 0px;
   margin: 0px;
 }
@@ -25,10 +49,4 @@ li{
   margin-bottom: 1%;
 }
 
-a {
-  color:black;
-}
 
-a:visited{
-  color: black;
-}

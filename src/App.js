@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import Home from './pages/Welkom';
 import OverOns from './pages/OverOns';
 import Appartement from './pages/Appartement';
@@ -17,13 +17,13 @@ function App() {
         <main className="app">
         <nav>
           <ul className="links">
-            <li><Link to="/" style={{ textDecoration: 'none' }}><button type="button">Welkom</button></Link></li>
-            <li><Link to="/overons" style={{ textDecoration: 'none' }}>Wie zijn wij</Link></li>
-            <li><Link to="/appartement" style={{ textDecoration: 'none' }}>Appartement</Link></li>
-            <li><Link to="/omgeving" style={{ textDecoration: 'none' }}>Omgeving</Link></li>
-            <li><Link to="/fotos" style={{ textDecoration: 'none' }}>Fotos</Link></li>
-            <li><Link to="/contact" style={{ textDecoration: 'none' }}>Contact</Link></li>
-            <li><Link to="/gastenboek" style={{ textDecoration: 'none' }}>Gastenboek</Link></li>
+            <li><NavLink to="/" activeClassName="selected" style={{ textDecoration: 'none' }}>Welkom</NavLink></li>
+            <li><NavLink to="/overons" activeClassName="selected" style={{ textDecoration: 'none' }}>Wie zijn wij</NavLink></li>
+            <li><NavLink to="/appartement" activeClassName="selected" style={{ textDecoration: 'none' }}>Appartement</NavLink></li>
+            <li><NavLink to="/omgeving" activeClassName="selected" style={{ textDecoration: 'none' }}>Omgeving</NavLink></li>
+            <li><NavLink to="/fotos" activeClassName="selected" style={{ textDecoration: 'none' }}>Fotos</NavLink></li>
+            <li><NavLink to="/contact" activeClassName="selected" style={{ textDecoration: 'none' }}>Contact</NavLink></li>
+            <li><NavLink to="/gastenboek" activeClassName="selected" style={{ textDecoration: 'none' }}>Gastenboek</NavLink></li>
           </ul>
         </nav>
 
