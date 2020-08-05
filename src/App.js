@@ -6,10 +6,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="demo-big-content">
-      <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white' }} 
-        to="/" >Home</Link> } scroll>
+    <div style={{height: '100vh'}}>
+    <Layout fixedHeader>
+        <Header title={<Link style={{textDecoration: 'none', color: 'white' }} 
+        to="/" ><strong>Home</strong></Link>}>
           <Navigation>
             <Link to="/overons">Over Ons</Link>
             <Link to="/appartement">Appartement</Link>
@@ -40,3 +40,10 @@ function App() {
 }
 
 export default App;
+
+{/* <div className="demo-big-content">
+      <Layout>
+        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white' }} 
+        to="/" >Home</Link> } scroll></Header>
+
+         */}
