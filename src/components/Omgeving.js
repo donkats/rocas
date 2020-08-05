@@ -79,6 +79,62 @@ const Omgeving = props => {
             <Cell col={6}>Gemiddeld liggen de prijzen iets lager dan in Nederland.</Cell>
             </Grid>
 
+            <Grid className="grid-links">
+            <Cell col={12}>
+
+              <p>
+
+              Hieronder vindt u enkele suggesties om uw verblijf op Tenerife onvergetelijk te maken.{"\n"}{"\n"}
+              * Vliegtickets o.a. via: Ryanair https://www.ryanair.com/nl/nl, Transavia https://www.transavia.com/,
+              Vliegensvlug http://www.vliegensvlug.be/, Thomas Cook https://www.thomascook.com/nl-be, Easyjet
+              https://www.easyjet.com/nl, TUI https://www.tui.nl/vliegtickets/, Brussels Airlines
+              https://www.brusselsairlines.com/nl-nl/;{"\n"}
+
+              * Autoverhuur vanaf vliegveld (het is ook mogelijk om een auto te huren bij een bedrijf dicht bij het
+              complex. Gigi rent a car https://www.rentacar-gigi.com/nl , Wij kunnen ook een huurauto voor u
+              reserveren bij boeking, u kunt dan uw auto bij het complex ophalen op de gewenste datum, indien
+              beschikbaar.);{"\n"}
+
+              * Goed om te weten; http://www.tenerife-reisgids.be/tenerife-tips.php{"\n"}
+
+              * Duikpark; http://www.coralsub.com/fr/home{"\n"}
+
+              * Waterpark Siam; https://www.siampark.net/index.php/en/{"\n"}
+
+              * Loro park; https://www.loroparque.com/index.php/en/{"\n"}
+
+              * Junglepark (Recreatiepark Aquilas del Teide); https://www.junglepark.es/{"\n"}
+
+              * Monkeypark; http://monkeypark.com/{"\n"}
+
+              * Camel park; https://camelpark.es/?lang=en{"\n"}
+
+              * Wandeltochten; http://www.tenerife-reisgids.be/tenerife-wandelen.php{"\n"}
+
+              * De Teide; http://www.tenerife-reisgids.be/tenerife-teide-vulkaan.php{"\n"}
+
+              * Dolfijnen en walvissen excursie; https://www.droomplekken.nl/spanje/zie-de-walvissen-en-dolfijnen-van-
+              tenerife/{"\n"}
+
+              * Piramides de Guimar; https://www.droomplekken.nl/spanje/tenerife/{"\n"}
+
+              * Wijnmuseum; http://www.tenerife-reisgids.be/tenerife-casa-del-vino.php{"\n"}
+
+              * Las Cañadas; https://dier-en-natuur.infonu.nl/natuur/20977-las-canadas-tenerife.html{"\n"}
+
+              * Masca kloof; https://www.wandelvrouw.nl/de-masca-kloof-op-tenerife/{"\n"}
+
+              * Costa del Silencio; http://www.tenerife-reisgids.be/tenerife-costa-del-silencio.php{"\n"}
+
+              * Playa de Las Americas; http://www.allesovertenerife.nl/playa-de-las-americas.htm{"\n"}
+
+              * Los Cristianos; http://www.allesovertenerife.nl/los-cristianos.htm{"\n"}
+
+
+                </p>
+            </Cell>
+            </Grid>
+
           </div>
         </Cell>
       </Grid>
