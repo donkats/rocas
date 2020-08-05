@@ -29,14 +29,12 @@ const Omgeving = props => {
             zwembad bevindt zich een klein café voor hapjes en drankjes, genaamd “De Puntmuts”.</p>
 
             <Grid className="grid-info">
-            <Cell col={3}>image</Cell>
-            <Cell col={3}>Vliegtijd van/naar Nederland</Cell>
-            <Cell col={6}>Ongeveer vier uur en een kwartier tot bijna vijf uur</Cell>
-            </Grid>
-            <Grid className="grid-info">
-            <Cell col={3}>image</Cell>
-            <Cell col={3}>Tijdzone</Cell>
-            <Cell col={6}>UTC0; op Tenerife is het altijd één uur vroeger dan in Nederland</Cell>
+            <Cell col={1}>image</Cell>
+            <Cell col={1}>Vliegtijd van/naar Nederland</Cell>
+            <Cell col={4}>Ongeveer vier uur en een kwartier tot bijna vijf uur</Cell>
+            <Cell col={1}>image</Cell>
+            <Cell col={1}>Tijdzone</Cell>
+            <Cell col={4}>UTC0; op Tenerife is het altijd één uur vroeger dan in Nederland</Cell>
             </Grid>
 
             <Grid className="grid-info">
@@ -65,27 +63,22 @@ const Omgeving = props => {
 
             <Grid className="grid-info">
             <Cell col={3}>image</Cell>
-            <Cell col={3}>uitleg</Cell>
-            <Cell col={6}>text</Cell>
+            <Cell col={3}>Mobiel netwerk</Cell>
+            <Cell col={6}>Goede dekking met uitzondering van sommige plekken in de bergen (o.a. rondom Masca).</Cell>
             </Grid>
 
             <Grid className="grid-info">
             <Cell col={3}>image</Cell>
-            <Cell col={3}>uitleg</Cell>
-            <Cell col={6}>text</Cell>
+            <Cell col={3}>Openbaar vervoer</Cell>
+            <Cell col={6}>Uitstekende dekking van bussen en in toeristenplaatsen goede beschikbaarheid taxi's.</Cell>
             </Grid>
 
             <Grid className="grid-info">
             <Cell col={3}>image</Cell>
-            <Cell col={3}>uitleg</Cell>
-            <Cell col={6}>text</Cell>
+            <Cell col={3}>Prijsniveau</Cell>
+            <Cell col={6}>Gemiddeld liggen de prijzen iets lager dan in Nederland.</Cell>
             </Grid>
 
-            <Grid className="grid-info">
-            <Cell col={3}>image</Cell>
-            <Cell col={3}>uitleg</Cell>
-            <Cell col={6}>text</Cell>
-            </Grid>
           </div>
         </Cell>
       </Grid>
