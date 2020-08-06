@@ -1,9 +1,3 @@
-.header-color {
-  background: #ee0979;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .landing-grid {
   background-image: url("./assets/background-wide.JPG");
   background-position: center;
@@ -30,14 +24,15 @@
   background-color: rgba(255, 255, 255, 0.9);
   width: 75%;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .banner-text h1 {
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
   color: blue;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 1%;
 }
 
 .banner-text hr {
