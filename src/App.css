@@ -11,6 +11,23 @@
   height: 100%;
 }
 
+.complex-grid{
+  color:blue;
+}
+
+.info-grid {
+  color: blue;
+  width:80%;
+}
+
+.links-grid {
+  color: blue;
+}
+
+.info-list {
+  margin-left: 3%;
+}
+
 .photo-top {
   text-align: center;
 }
