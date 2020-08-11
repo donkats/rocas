@@ -1,21 +1,25 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 
+import rocas01 from './photos/rocasfoto01.jpg';
+
+
+
 class Album extends React.Component {
 
   render() {
 
     const images = [
       {
-        original: 'http://lorempixel.com/1000/600/nature/1/',
+        original: {rocas01},
         thumbnail: 'http://lorempixel.com/250/150/nature/1/',
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
+        original: {rocas01},
         thumbnail: 'http://lorempixel.com/250/150/nature/2/'
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
+        original: {rocas01},
         thumbnail: 'http://lorempixel.com/250/150/nature/3/'
       }
     ]
