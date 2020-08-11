@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-import photoCloseup from '../assets/caro-xander-closeup.png';
 
 const Omgeving = props => {
   return (
@@ -20,7 +19,7 @@ const Omgeving = props => {
             Calle de Zeus 6, appartement 102{"\n"}
             38630 Costa del Silencio{"\n"}
             Tenerife{"\n"}</p></Cell>
-            <Cell col={6}><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3522.647608889461!2d-16.647958384866556!3d28.00467581896912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6aa211f1c1c197%3A0x3fc7306ee8f87c2a!2sRocas%20del%20Mar!5e0!3m2!1sen!2snl!4v1596660545853!5m2!1sen!2snl"
+            <Cell col={6}><iframe title="Google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3522.647608889461!2d-16.647958384866556!3d28.00467581896912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6aa211f1c1c197%3A0x3fc7306ee8f87c2a!2sRocas%20del%20Mar!5e0!3m2!1sen!2snl!4v1596660545853!5m2!1sen!2snl"
             style={{width: '300', height: '200', frameborder: '0', borderRadius: '20px' }} allowfullscreen></iframe></Cell>
             </Grid>
 

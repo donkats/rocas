@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/Main'
@@ -40,10 +40,3 @@ function App() {
 }
 
 export default App;
-
-{/* <div className="demo-big-content">
-      <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white' }} 
-        to="/" >Home</Link> } scroll></Header>
-
-         */}

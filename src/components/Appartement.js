@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Cell } from 'react-mdl';
-import photoCloseup from '../assets/caro-xander-closeup.png';
 
 const Appartement = props => {
   return (
