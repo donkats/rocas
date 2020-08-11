@@ -1,4 +1,5 @@
 import React from 'react';
+import Album from './Album';
 import { Grid, Cell } from 'react-mdl';
 
 const Fotos = props => {
@@ -12,7 +13,9 @@ const Fotos = props => {
 
             <hr/>
             
-            <p>fotoslider</p>
+            <div className="foto-album-wrapper">
+              <Album />
+            </div>
 
           </div>
         </Cell>
