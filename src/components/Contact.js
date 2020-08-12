@@ -12,7 +12,8 @@ const Contact = props => {
 
             <hr/>
             
-            <p>form</p>
+            <p>U kunt contact met ons opnemen door onderstaande contactformulier in te vullen. Wij zullen dan zo
+            snel mogelijk reageren.</p>
           </div>
         </Cell>
       </Grid>
