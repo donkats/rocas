@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl';
+import ContactForm from './ContactForm';
 
 const Contact = props => {
   return (
@@ -15,21 +16,7 @@ const Contact = props => {
             <p>U kunt contact met ons opnemen door onderstaande contactformulier in te vullen. Wij zullen dan zo
             snel mogelijk reageren.</p>
 
-            <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Naam: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>E-mailadres: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Bericht: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Verzenden</button>
-          </p>
-        </form>
+            <ContactForm></ContactForm>
           </div>
         </Cell>
       </Grid>

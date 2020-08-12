@@ -1,44 +1,59 @@
 import React from 'react'
 import './ContactForm.css'
 
-const ContactForm = () => (
-  <form className="contact-form" method="POST" action="/contact">
-    <div className="form-field">
-      <label htmlFor="name">
-        <div className="label-content">Name:</div>
-        <input type="text" name="name" required />
-      </label>
-    </div>
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
-    <div className="form-field">
-      <label htmlFor="email">
-        <div className="label-content">Email:</div>
-        <input type="email" name="email" required />
-      </label>
-    </div>
+  class ContactForm extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { name: "", email: "", message: "" };
+    }
 
-    <div className="form-field">
-      <label htmlFor="message">
-        <div className="label-content">Message:</div>
-        <textarea className="stretch" name="message" rows="5" required />
-      </label>
-    </div>
+    /* Here’s the juicy bit for posting the form submission */
 
-    <button type="submit">Send</button>
+    handleSubmit = e => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...this.state })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
 
-    <div>
-      { window.location.hash === '#success' &&
-        <div id="success">
-          <p>Your message has been sent!</p>
-        </div>
-      }
-      { window.location.hash === '#error' &&
-        <div id="error">
-          <p>An error occured while submitting the form.</p>
-        </div>
-      }
-    </div>
-  </form>
-)
+      e.preventDefault();
+    };
 
-export default ContactForm
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+    render() {
+      const { name, email, message } = this.state;
+      return (
+        <form onSubmit={this.handleSubmit}>
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message" value={message} onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      );
+    }
+  }
+
+export default ContactForm;
