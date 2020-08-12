@@ -1,5 +1,5 @@
-import React from 'react'
-import './ContactForm.css'
+import React from 'react';
+import { Grid, Cell } from 'react-mdl';
 
 const encode = (data) => {
     return Object.keys(data)
@@ -13,15 +13,13 @@ const encode = (data) => {
       this.state = { name: "", email: "", message: "" };
     }
 
-    /* Here’s the juicy bit for posting the form submission */
-
     handleSubmit = e => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
       })
-        .then(() => alert("Success!"))
+        .then(() => alert("Uw bericht is succesvol verzonden!"))
         .catch(error => alert(error));
 
       e.preventDefault();
@@ -35,21 +33,24 @@ const encode = (data) => {
         <form onSubmit={this.handleSubmit}>
           <p>
             <label>
-              Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+                <Grid className="form-grid">
+                    <Cell col={2}>Naam:</Cell>
+                    <Cell col={3}><input type="text" name="name" value={name} onChange={this.handleChange} /></Cell>
+                </Grid>
             </label>
-          </p>
-          <p>
             <label>
-              Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+            <Grid className="form-grid">
+                <Cell col={2}>E-mailadres:</Cell>
+                <Cell col={3}><input type="email" name="email" value={email} onChange={this.handleChange} /></Cell>
+            </Grid>
             </label>
-          </p>
-          <p>
             <label>
-              Message: <textarea name="message" value={message} onChange={this.handleChange} />
+            <Grid className="form-grid">
+                <Cell col={2}>Bericht:</Cell>
+                <Cell col={3}><textarea name="message" value={message} onChange={this.handleChange} /></Cell>
+            </Grid>
             </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
+            <button type="submit">Verzenden</button>
           </p>
         </form>
       );
