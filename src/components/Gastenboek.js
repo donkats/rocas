@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { getAllNotes } from '../api'
 import { Grid, Cell } from 'react-mdl';
+import { NoteForm, NoteList } from '../components'
 
 const Gastenboek = props => {
+
+  const [notes, setNotes] = useState([])
+
+  useEffect(() => {
+    getAllNotes.then(res => setNotes(res))
+  }, [])
+
   return (
     <div style={{width: '100%', margin:'auto'}}>
       <Grid className="landing-grid">
@@ -13,6 +22,13 @@ const Gastenboek = props => {
             <hr/>
             
             <p>Gastenboek</p>
+
+            <div className="notes-container">
+              <NoteForm notes={notes} setNotes={setNotes} />
+              <NoteList 
+            data={notes}
+          />
+            </div>
 
           </div>
         </Cell>
